@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/style0.css">
+    <title>Document</title>
+
+   
+</head>
+<body>
+  
+
+    <form action="../php/validar.php" method="post">
+        <h1>Inicio Sesion</h1>
+        <hr>
+        <?php
+        if(isset($_GET['error'])){
+            ?>
+           <p class="error">
+        <?php
+        echo $_GET['error'];
+
+        ?>
+
+        </p>
+       <?php 
+        }
+        ?>
+
+    <input type="text" placeholder="nueva contraseña" name="nueva contraseña"></p>
+    <input type="text" placeholder="repetir contraseña" name="repetir contraseña"></p>
+    <input class="btn" type="submit" name="register" value="Ingresar">
+    <ul></ul>
+   
+
+   
+</form>
+   
+</body>
+</html>
+
+
+
