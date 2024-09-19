@@ -1,0 +1,115 @@
+body {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color:#72b1fa ;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    text-align: center;
+    
+    }
+    
+    form {
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+        padding: 20px 35px;
+        border-radius: 25px;
+        background-color: aliceblue;
+        display:flex;
+        flex-direction:column;
+        text-align: center;
+        width:380px;
+        margin-bottom: 30px;
+    
+    }
+    
+    form h2{
+        font-size: 5px;
+        color:black;
+        margin:0;
+    }
+    form p{
+        font-size: 16px;
+        color:black;
+        margin-bottom: 20px;
+    
+    }
+    
+    .input-wrapper{
+        position: relative;
+        width: 305px;
+        margin-bottom: 35px;
+    }
+    
+    input{
+        color:black;
+        padding: 10px 15px 10px 10px;
+        width: 100%;
+        border-radius: 15px;
+        border: 0;
+        box-shadow: 0 0 20px rgba(192, 203, 251, 0.7);
+        outline:none;
+        font-size: 16px;
+   
+    }
+    
+    .input-icon{
+        position: absolute;
+        height: 30px;
+        width: 30px;
+        left: 20px;
+        top: 50%;
+        transform: translateY(-55%);
+    
+    }
+    .btn{
+        padding: 10px;
+        background: linear-gradient(90deg, rgba(82, 51, 255 )25%, 
+                                           rgba(51, 66, 255 )100%);
+    
+        box-shadow: 0 0 5px rgba(11, 2, 2 );     
+        color:aliceblue;
+        text-transform: uppercase;     
+        font-size: 14px;      
+        cursor: pointer;                   
+    }
+    .btn:hover{
+        background: rgb(9, 35, 152 );
+    }
+    
+    .success {
+        position: absolute;
+        top:30px;
+        color:#00C83C;
+        font-size: 15px;
+    }
+    
+    .error {
+        position:absolute;
+        top: 30px;
+        color: #e02d00;
+        font-size: 15px;
+    }
+    
+    @media (max-width:991px){
+        body{
+            padding: 10px;
+        }
+        form{
+            padding: 20px;
+            width: 100%;
+        }
+        .input-wrapper{
+            position: relative;
+            width: 88%;
+            margin-bottom: 35px;
+        }
+        input{
+            padding: 20px 0px 20px 45px;
+        }
+        .input-icon{
+            height: 15px;
+            width: 15px;
+        }
+    }
+    
